@@ -1,0 +1,90 @@
+/*@date <22-02-2023>
+@author <Juarez Velazquez Rafael>
+@version <primera version del codigo>*/
+#include <stdio.h>
+//damos inicio a nuestro programa 
+int main() {
+  	int puntos = 0;
+  	int respuesta;
+  	printf("\nFiltros para la toma de riesgos en una cita\n");
+	printf("\nResponde las siguinetes 10 preguntas para saber si vale la pena correr el riesgo o no\n");
+  	// Hacemos 10 preguntas cerradas y se le asiga un punto a cada una 
+ 		printf("1.-¿Tienen una personalidad compatible?\n");
+  		printf("1. SI \n2. NO \n");
+  		scanf("%d", &respuesta);
+  		if (respuesta == 1) {
+    	puntos++;
+  }
+
+	  	printf("2.-¿Viven lo suficientemente cerca para no ser una relacion a distancia?\n");
+	  	printf("1. SI \n2. NO \n");
+	  	scanf("%d", &respuesta);
+	  	if (respuesta == 1) {
+      	puntos++;
+  }
+
+	  	printf("3.-¿Tiene planes a futuro?\n");
+	  	printf("1. SI \n2. NO \n");
+	  	scanf("%d", &respuesta);
+	  	if (respuesta == 1) {
+		puntos++;
+  }
+
+	 	 printf("4.-¿Te ves en una relacion duradera con el?\n");
+	  	printf("1. SI \n2. NO \n");
+  	  	scanf("%d", &respuesta);
+	   	if (respuesta == 1) {
+      	puntos++;
+  }
+
+		printf("5.-¿Escuchan el mismo tipo de musica?\n");
+ 		printf("1. SI \n2. NO \n");
+  		scanf("%d", &respuesta);
+  		if (respuesta == 1) {
+    	puntos++;
+  }
+
+  		printf("6.-¿Los dos practican deporte?\n");
+  		printf("1. SI \n2. NO \n");
+  		scanf("%d", &respuesta);
+  		if (respuesta == 1) {
+    	puntos++;
+  }
+
+	  	printf("7.-¿Le gusta los animales?\n");
+	  	printf("1. SI \n2. NO \n");
+	  	scanf("%d", &respuesta);
+	  	if (respuesta == 1) {
+	    puntos++;
+  }
+
+  		printf("8.-¿Los 2 tienen mascotas?\n");
+		printf("1. Marte\n2. Venus\n3. Júpiter\n");
+ 		scanf("%d", &respuesta);
+  		if (respuesta == 1) {
+    	puntos++;
+  }
+
+  		printf("9.-¿Le gusta leer?\n");
+  		printf("1. SI \n2. NO \n");
+  		scanf("%d", &respuesta);
+  		if (respuesta == 1) {
+    	puntos++;
+  }
+
+  		printf("10.-¿Le gusta cocinar?\n");
+  		printf("1. SI \n2. NO \n");
+  		scanf("%d", &respuesta);
+  		if (respuesta == 1) {
+    	puntos++;
+  }
+  // Mostramos la puntuación obtenida y dependiendo de esta indicamos si son compatibles
+  		printf("\nTu puntuación es: %d/10\n", puntos);
+  		if (puntos < 7){
+  		printf("No son lo suficientemente compatibles para tpmar el riesgo");
+  }
+  		if (puntos >= 7){
+		  printf("Son compatible y puedes tomar el riesgo ");
+  }
+  return 0;
+}
